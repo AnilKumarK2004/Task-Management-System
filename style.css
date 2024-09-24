@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Black and blue gradient */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #f39c12, #e74c3c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Form Section */
+form {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6); /* Purple gradient */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 30%;
+    margin-right: 5%;
+}
+
+/* Input Fields */
+form input[type="text"], form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    box-sizing: border-box;
+}
+
+/* Button Styles */
+form button {
+    background: linear-gradient(90deg, #e74c3c, #f39c12);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s ease, transform 0.2s;
+    width: 100%;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #f39c12, #e74c3c);
+    transform: translateY(-2px); /* Hover lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Section */
+.table-container {
+    width: 70%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+table td {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+table tr:hover td {
+    background-color: #ecf0f1;
+    transform: scale(1.01); /* Slight scale-up effect on hover */
+}
+
+/* Action Buttons */
+table button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+table button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px); /* Hover lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table button.edit-btn {
+    background-color: #3498db;
+}
+
+table button.edit-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .table-container {
+        border-radius: 10px;
+        width: 100%;
+    }
+}
