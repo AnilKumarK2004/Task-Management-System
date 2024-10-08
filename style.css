@@ -48,7 +48,8 @@ h1 {
 
 /* Form Section */
 form {
-    background: linear-gradient(135deg, #ffffff34, #ffffff38); /* Purple gradient */
+    /* background: linear-gradient(135deg, #ffffff34, #ffffff38); Purple gradient */
+    background: rgba(255, 255, 255, 0.158);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
