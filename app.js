@@ -32,8 +32,12 @@ function displayTasks() {
             <td>${task.priority}</td>
             <td>${task.category}</td>
             <td>
-                <button onclick="editTask(${task.id})">Edit</button>
-                <button onclick="deleteTask(${task.id})">Delete</button>
+                <button onclick="editTask(${task.id})">
+                <img src = "./image(2).png" width = 20px>
+                </button>
+                <button onclick="deleteTask(${task.id})">
+                <img src = "./image(1).png" width = 20px>
+                </button>
             </td>
         `;
         taskTableBody.appendChild(row);
